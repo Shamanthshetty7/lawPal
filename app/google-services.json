@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "969290695914",
+    "project_id": "lawpal-7d002",
+    "storage_bucket": "lawpal-7d002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969290695914:android:a9864c2ef93f613fd54393",
+        "android_client_info": {
+          "package_name": "com.example.matrix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbnasa8yXONRxS54L2n6O4YiD_PgGy97c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

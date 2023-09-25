@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="user_types">
+        <item>Client</item>
+        <item>Advocate</item>
+    </array>
+    <string name="user_type_prompt">Select User Type</string>
+
+</resources>
