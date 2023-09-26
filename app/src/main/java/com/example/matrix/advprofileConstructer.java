@@ -20,13 +20,13 @@ public class advprofileConstructer {
     private String awardsRecognition;
     private String profileImageUrl;
 
-
+    private String language;
     // Default constructor (empty)
     public advprofileConstructer() {
     }
 
     // Parameterized constructor
-    public advprofileConstructer(String userId, String Name ,String mobile, String email, String gender, String aadhar,
+    public advprofileConstructer(String userId, String Name ,String mobile, String email, String gender, String aadhar,String language,
                                  String location, String lawSchool, String yearOfGraduation,
                                  String areaOfPractice, String website, String officeAddress, String introduction,
                                  String yearOfExperience, String awardsRecognition) {
@@ -37,6 +37,7 @@ public class advprofileConstructer {
         this.email = email;
         this.gender = gender;
         this.aadhar = aadhar;
+        this.language=language;
         this.location = location;
         this.lawSchool = lawSchool;
         this.yearOfGraduation = yearOfGraduation;
@@ -51,6 +52,9 @@ public class advprofileConstructer {
     // Getters and setters for all fields
     public String getName() {
         return Name;
+    }
+    public String getLanguage(){
+        return language;
     }
     public void setName(String name) {
         this.Name=name;
@@ -175,4 +179,7 @@ public class advprofileConstructer {
     }
 
 
+    public void setLanguage(String language) {
+        this.language=language;
+    }
 }

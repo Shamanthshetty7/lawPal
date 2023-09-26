@@ -103,6 +103,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinnerGender" />
+        <!-- Languages known -->
+        <EditText
+            android:id="@+id/editTextLanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Languages known"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAadhar" />
 
         <!-- Location -->
         <EditText
@@ -114,7 +125,7 @@
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextAadhar" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextLanguage" />
 
         <!-- Law School -->
         <EditText

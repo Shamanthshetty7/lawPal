@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="17dp"
+    android:elevation="15dp"
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="371dp"
+        android:layout_height="194dp"
+        android:background="#F1B7B7"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/adv_image_imageview"
+            android:layout_width="84dp"
+            android:layout_height="98dp"
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+
+            android:layout_marginStart="0dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="78dp"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.854"
+            app:strokeWidth="5dp" />
+
+        <TextView
+            android:id="@+id/advocate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/adv_image_imageview"
+            android:text="Advocate name"
+            android:textColor="#130303"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_below="@id/advlocation"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="-46dp"
+
+            android:layout_marginTop="101dp"
+            android:layout_toRightOf="@id/adv_image_imageview"
+            android:text="Amount/min"
+            android:textColor="#DD0A0A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/advlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_below="@id/advocate_name"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toRightOf="@id/adv_image_imageview"
+            android:text="Loaction"
+            android:textColor="#302A2A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="6dp"
+            android:text="Call" />
+
+        <TextView
+            android:id="@+id/AdvExperience"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/advocate_name"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="29dp"
+            android:layout_toEndOf="@+id/adv_image_imageview"
+            android:text="Experience"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Advlanguage"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/advlocation"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="33dp"
+            android:layout_toEndOf="@+id/adv_image_imageview"
+            android:text="Languages" />
+
+        <TextView
+            android:id="@+id/practice_areas"
+            android:layout_width="177dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/AdvExperience"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="105dp"
+            android:layout_marginBottom="41dp"
+            android:text="Practice Areas:"
+            android:textAlignment="textStart"
+            android:textColor="#100202"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/practice_contents"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="23dp"
+            android:text="practice_contents" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

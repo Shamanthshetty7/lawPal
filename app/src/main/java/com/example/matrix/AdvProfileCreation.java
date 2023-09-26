@@ -30,7 +30,7 @@ import com.google.firebase.storage.UploadTask;
 
 public class AdvProfileCreation extends AppCompatActivity {
 
-    private EditText AdvName,mobileEditText, emailEditText, aadharEditText, locationEditText, lawSchoolEditText, yearOfGraduationEditText,
+    private EditText AdvName,mobileEditText, emailEditText, aadharEditText,languageEdittext, locationEditText, lawSchoolEditText, yearOfGraduationEditText,
             areaOfPracticeEditText, websiteEditText, officeAddressEditText, introductionEditText, yearOfExperienceEditText, awardsRecognitionEditText;
     private Spinner genderSpinner;
     private Button submitButton;
@@ -86,6 +86,7 @@ public class AdvProfileCreation extends AppCompatActivity {
         emailEditText = findViewById(R.id.clientEmail);
         genderSpinner = findViewById(R.id.spinnerGender);
         aadharEditText = findViewById(R.id.editTextAadhar);
+        languageEdittext=findViewById(R.id.editTextLanguage);
         locationEditText = findViewById(R.id.editTextLocation);
         lawSchoolEditText = findViewById(R.id.editTextLawSchool);
         yearOfGraduationEditText = findViewById(R.id.editTextYearOfGraduation);
@@ -97,6 +98,7 @@ public class AdvProfileCreation extends AppCompatActivity {
         awardsRecognitionEditText = findViewById(R.id.editTextAwardsRecognition);
         imageViewProfile = findViewById(R.id.clientimageViewProfile);
         buttonUploadPicture = findViewById(R.id.clientbuttonUploadPicture);
+
         buttonUploadPicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -118,6 +120,8 @@ public class AdvProfileCreation extends AppCompatActivity {
                 String email = emailEditText.getText().toString();
                 String gender = genderSpinner.getSelectedItem().toString();
                 String aadhar = aadharEditText.getText().toString();
+                String language=languageEdittext.getText().toString();
+
                 String location = locationEditText.getText().toString();
                 String lawSchool = lawSchoolEditText.getText().toString();
                 String yearOfGraduation = yearOfGraduationEditText.getText().toString();
@@ -136,6 +140,7 @@ public class AdvProfileCreation extends AppCompatActivity {
                 userProfile.setEmail(email);
                 userProfile.setGender(gender);
                 userProfile.setAadhar(aadhar);
+                userProfile.setLanguage(language);
                 userProfile.setLocation(location);
                 userProfile.setLawSchool(lawSchool);
                 userProfile.setYearOfGraduation(yearOfGraduation);
