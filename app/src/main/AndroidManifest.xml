@@ -34,6 +34,7 @@
         <activity android:name=".ClientsHomePage"></activity>
         <activity android:name=".clientAdvocateInteraction"></activity>
         <activity android:name=".clientProfile"></activity>
+        <activity android:name=".document_upload"></activity>
 
     </application>
 
