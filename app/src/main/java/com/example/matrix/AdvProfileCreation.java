@@ -1,5 +1,6 @@
 package com.example.matrix;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
@@ -29,7 +30,7 @@ import com.google.firebase.storage.UploadTask;
 
 public class AdvProfileCreation extends AppCompatActivity {
 
-    private EditText mobileEditText, emailEditText, aadharEditText, locationEditText, lawSchoolEditText, yearOfGraduationEditText,
+    private EditText AdvName,mobileEditText, emailEditText, aadharEditText, locationEditText, lawSchoolEditText, yearOfGraduationEditText,
             areaOfPracticeEditText, websiteEditText, officeAddressEditText, introductionEditText, yearOfExperienceEditText, awardsRecognitionEditText;
     private Spinner genderSpinner;
     private Button submitButton;
@@ -79,7 +80,7 @@ public class AdvProfileCreation extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         storageReference = FirebaseStorage.getInstance().getReference("profile_images");
         mDatabase = FirebaseDatabase.getInstance().getReference("Advocates"); // Change to "Advocates" if needed
-
+        AdvName=findViewById(R.id.editTextAdvName);
         // Initialize views
         mobileEditText = findViewById(R.id.editTextMobile);
         emailEditText = findViewById(R.id.clientEmail);
@@ -112,6 +113,7 @@ public class AdvProfileCreation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Get values from the views
+                String name=AdvName.getText().toString() ;
                 String mobile = mobileEditText.getText().toString();
                 String email = emailEditText.getText().toString();
                 String gender = genderSpinner.getSelectedItem().toString();
@@ -129,6 +131,7 @@ public class AdvProfileCreation extends AppCompatActivity {
                 // Create a UserProfile object with the values
                 advprofileConstructer userProfile = new advprofileConstructer();
                 userProfile.setUserId(currentUser.getUid()); // Use Firebase Auth UID as the unique identifier
+                userProfile.setName(name);
                 userProfile.setMobile(mobile);
                 userProfile.setEmail(email);
                 userProfile.setGender(gender);

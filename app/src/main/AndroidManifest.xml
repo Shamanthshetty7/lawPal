@@ -32,6 +32,8 @@
         <activity android:name=".AdvProfileCreation"></activity>
         <activity android:name=".AdvocatesHomePage"></activity>
         <activity android:name=".ClientsHomePage"></activity>
+        <activity android:name=".clientAdvocateInteraction"></activity>
+
     </application>
 
 </manifest>

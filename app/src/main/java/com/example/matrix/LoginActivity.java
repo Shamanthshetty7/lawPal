@@ -3,13 +3,9 @@ package com.example.matrix;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.content.Intent;
-import android.os.Handler;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -72,11 +68,11 @@ public class LoginActivity extends AppCompatActivity {
 
                                           if ("Advocate".equals(userType)) {
                                               // Navigate to Advocate's home page
-                                              Intent intent = new Intent(LoginActivity.this, AdvocatesHomePage.class);
+                                              Intent intent = new Intent(LoginActivity.this, clientAdvocateInteraction.class);
                                               startActivity(intent);
                                           } else if ("Client".equals(userType)) {
                                               // Navigate to Client's home page
-                                              Intent intent = new Intent(LoginActivity.this, ClientsHomePage.class);
+                                              Intent intent = new Intent(LoginActivity.this, clientAdvocateInteraction.class);
                                               startActivity(intent);
                                           } else {
                                               Toast.makeText(LoginActivity.this, "Something went wrong"+userType, Toast.LENGTH_SHORT).show();

@@ -1,7 +1,10 @@
 package com.example.matrix;
 
+import android.widget.EditText;
+
 public class advprofileConstructer {
     private String userId; // Unique identifier (Primary Key)
+    private String Name;
     private String mobile;
     private String email;
     private String gender;
@@ -16,17 +19,20 @@ public class advprofileConstructer {
     private String yearOfExperience;
     private String awardsRecognition;
     private String profileImageUrl;
+
+
     // Default constructor (empty)
     public advprofileConstructer() {
     }
 
     // Parameterized constructor
-    public advprofileConstructer(String userId, String mobile, String email, String gender, String aadhar,
+    public advprofileConstructer(String userId, String Name ,String mobile, String email, String gender, String aadhar,
                                  String location, String lawSchool, String yearOfGraduation,
                                  String areaOfPractice, String website, String officeAddress, String introduction,
                                  String yearOfExperience, String awardsRecognition) {
 
         this.userId = userId;
+        this.Name=Name;
         this.mobile = mobile;
         this.email = email;
         this.gender = gender;
@@ -43,7 +49,12 @@ public class advprofileConstructer {
     }
 
     // Getters and setters for all fields
-
+    public String getName() {
+        return Name;
+    }
+    public void setName(String name) {
+        this.Name=name;
+    }
     public String getProfileImageUrl() {
         return profileImageUrl;
     }
@@ -162,4 +173,6 @@ public class advprofileConstructer {
     public void setProfileImageUrl(String profileImageUrl) {
         this.profileImageUrl = profileImageUrl;
     }
+
+
 }
