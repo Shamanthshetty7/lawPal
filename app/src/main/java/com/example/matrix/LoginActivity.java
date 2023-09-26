@@ -72,14 +72,14 @@ public class LoginActivity extends AppCompatActivity {
                                               startActivity(intent);
                                           } else if ("Client".equals(userType)) {
                                               // Navigate to Client's home page
-                                              Intent intent = new Intent(LoginActivity.this, clientAdvocateInteraction.class);
+                                              Intent intent = new Intent(LoginActivity.this, ClientsHomePage.class);
+                                              intent.putExtra("email",Email);
                                               startActivity(intent);
                                           } else {
                                               Toast.makeText(LoginActivity.this, "Something went wrong"+userType, Toast.LENGTH_SHORT).show();
                                           }
                                       }else{
-                                          Intent intent = new Intent(LoginActivity.this, clientAdvocateInteraction.class);
-                                          startActivity(intent);
+                                          Toast.makeText(LoginActivity.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
                                       }
                                   }
 

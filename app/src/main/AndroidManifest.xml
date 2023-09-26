@@ -33,6 +33,7 @@
         <activity android:name=".AdvocatesHomePage"></activity>
         <activity android:name=".ClientsHomePage"></activity>
         <activity android:name=".clientAdvocateInteraction"></activity>
+        <activity android:name=".clientProfile"></activity>
 
     </application>
 

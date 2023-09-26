@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#60353A61" /> <!-- Use the updated color with opacity -->
+            <stroke
+                android:width="2dp"
+                android:color="#60353A61" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</selector>

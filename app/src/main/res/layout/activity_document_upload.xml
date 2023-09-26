@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Image View to display the selected image (initially empty) -->
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="342dp"
+        android:layout_height="411dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/blank" />
+
+    <!-- Button to browse and select an image -->
+    <Button
+        android:id="@+id/browse_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse Image"
+        android:layout_below="@id/image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/design_default_color_on_primary"
+        android:textColor="@android:color/white" />
+
+    <!-- Button to send the selected image -->
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_below="@id/browse_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/design_default_color_on_primary"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

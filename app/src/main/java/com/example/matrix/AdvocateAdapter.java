@@ -36,14 +36,14 @@ public class AdvocateAdapter extends ArrayAdapter<Advocate> {
         TextView amountTextView = convertView.findViewById(R.id.amount);
         TextView experienceTextView = convertView.findViewById(R.id.AdvExperience);
         TextView languageTextView = convertView.findViewById(R.id.Advlanguage);
-        TextView practiceAreasTextView = convertView.findViewById(R.id.practice_areas);
+        TextView practiceAreasTextView = convertView.findViewById(R.id.practice_contents);
         ImageView imageView = convertView.findViewById(R.id.adv_image_imageview);
         // Populate the data into the template view using the data object
         nameTextView.setText(advocate.getName());
         loactionTextView.setText(advocate.getLocation());
         amountTextView.setText(advocate.getAmount());
         languageTextView.setText(advocate.getLanguage());
-        experienceTextView.setText(advocate.getExperience());
+        experienceTextView.setText(advocate.getExperience()+" of Experience");
         practiceAreasTextView.setText(advocate.getPracticeAreas());
         if (advocate.getImageUrl() != null && !advocate.getImageUrl().isEmpty()) {
             Picasso.get().load(advocate.getImageUrl()).into(imageView);
